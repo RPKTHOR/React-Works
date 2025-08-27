@@ -1,0 +1,86 @@
+/* HotelStyles.css */
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.date-inputs label {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+input[type="date"] {
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.room-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.room-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.room-card:hover {
+  transform: scale(1.02);
+}
+
+.room-card.selected {
+  border: 2px solid #27ae60;
+}
+
+.room-card.disabled {
+  background-color: #eee;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.summary {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.summary h4 {
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.confirmed {
+  color: #27ae60;
+  font-weight: 600;
+  margin-top: 1rem;
+}

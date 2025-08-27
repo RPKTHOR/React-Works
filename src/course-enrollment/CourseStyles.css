@@ -1,0 +1,109 @@
+/* CourseStyles.css */
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-card:hover {
+  transform: scale(1.02);
+}
+
+.course-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.course-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+  margin: 0;
+}
+
+.fav-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #f39c12;
+  transition: color 0.2s ease;
+}
+
+.fav-btn:hover {
+  color: #e67e22;
+}
+
+.course-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.enroll-btn {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #219150;
+}
+
+.enroll-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.progress-section {
+  margin-top: 1rem;
+}
+
+.progress-section label {
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #27ae60;
+}
